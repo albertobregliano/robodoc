@@ -1,3 +1,3 @@
-module github.com/albertobregliano/hackathon-2023/submissions/pseudopolis/challenge-2/robodoc
+module github.com/albertobregliano/robodoc
 
 go 1.19
