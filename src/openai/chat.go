@@ -89,8 +89,9 @@ func getResponse(ctx context.Context, assistant Chat) (string, error) {
 	}
 
 	// log.Printf("%v\n", result)
-
-	response := result.Choices[0].Message.Content
-
-	return response, nil
+	if len(result.Choices) >= 1 {
+		response := result.Choices[0].Message.Content
+		return response, nil
+	}
+	return "ci devo pensare compagno", fmt.Errorf("nessuna risposta dall'API, verificare chiave openapi")
 }
