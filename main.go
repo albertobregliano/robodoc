@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/albertobregliano/hackathon-2023/submissions/pseudopolis/challenge-2/robodoc/src/openai"
+	"github.com/albertobregliano/robodoc/src/openai"
 )
 
 //go:embed robodoc.json
